@@ -2,9 +2,7 @@
     <img alt="GoStack" src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-header.png" width="200px" />
 </p>
 
-# FastFeet API (Back-end) - GoStack10
-
-##### OBS: Referente ao desafio 2
+<p align="center">FastFeet API (Back-end) - GoStack10 - Desafio 02.</p>
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
