@@ -1,5 +1,7 @@
 # FastFeet API (Back-end) - GoStack10
 
+##OBS: Referente ao desafio 2
+
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 API REST para controle de transportadoras em geral.
