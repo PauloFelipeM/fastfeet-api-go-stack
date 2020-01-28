@@ -26,6 +26,7 @@ body da requisição: email, password
 
 RETORNO: Dados do usuário e token
 
+---------------------------------
 
 ### Destinatários
 
@@ -84,3 +85,5 @@ END POINT: /recipients/:id
 parametros de rota: id do destinatário
 
 RETORNO: Mensagem de sucesso da remoção
+
+----------------------------------------
