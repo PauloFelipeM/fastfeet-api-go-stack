@@ -43,7 +43,7 @@ Senha: 123456
 
 ## 🚩 Rotas e Autenticação
 
-Veja [AQUI](ROUTES.md) das rotas e autenticação do usuário.
+Veja [AQUI](ROUTES.md) o processo de autenticação do usuário e todas as rotas disponivéis.
 
 ## :memo: Licença
 
