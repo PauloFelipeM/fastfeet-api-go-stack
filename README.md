@@ -12,11 +12,17 @@ Cadastro de destinatários.
 
 ![](header.png)
 
+-------------------------------------------------------------------------------------
+
 ## Technologies
 JavaScript (Node.js)
 
+-------------------------------------------------------------------------------------
+
 ## Requirido
 - [Node.js LTS version](https://nodejs.org/en/)
+
+-------------------------------------------------------------------------------------
 
 ## Instalação
 
@@ -24,16 +30,20 @@ git clone https://github.com/PauloFelipeM/fastfeet-api-go-stack.git
 
 cd /fastfeet-api-go-stack/ -> "npm install" or "yarn install"
 
+-------------------------------------------------------------------------------------
+
 ## Usage
 
 ### Dependencias:
 
 Dentro da sua pasta rode o comando de sua preferência para instalar as dependencias: "yarn dev" or "npm run dev"
 
+-------------------------------------------------------------------------------------
+
 ### Migração:
 
 No arquivo database.js dentro da pasta "src/config" é necessário realizar a configuração do banco de dados:
-
+```
 module.exports = {
   dialect: 'postgres', // Qual o banco de dados ex: postgres, mysql
   host: 'localhost', // Local onde o banco está configurado
@@ -46,13 +56,14 @@ module.exports = {
     underscoredAll: true,
   },
 };
-
+```
 Após as configurações, executar o comando abaixo para criar as tabelas:
 
 YARN: "yarn sequelize db:migrate" ou NPM: "npx sequelize-cli db:migrate"
 
-#### OBS: O banco de dados já deve está criado para realizar os procedimentos acima!.
+##### OBS: O banco de dados já deve está criado para realizar os procedimentos acima!.
 
+-------------------------------------------------------------------------------------
 
 ### Criar usuário para autenticação:
 
@@ -64,10 +75,13 @@ Email: admin@fastfeet.com
 
 Senha: 123456
 
+-------------------------------------------------------------------------------------
 
 ## 🚩 Rotas e Autenticação
 
 Veja [AQUI](ROUTES.md) o processo de autenticação do usuário e todas as rotas disponivéis.
+
+-------------------------------------------------------------------------------------
 
 ## :memo: Licença
 
