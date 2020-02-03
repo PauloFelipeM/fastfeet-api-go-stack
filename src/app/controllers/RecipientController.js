@@ -13,7 +13,21 @@ const schema = Yup.object().shape({
 
 class RecipientController {
   async index(req, res) {
-    const recipients = await Recipient.findAll();
+    const { page = 1 } = req.query;
+    const recipients = await Recipient.findAll({
+      attributes: [
+        'id',
+        'name',
+        'street',
+        'numer',
+        'complement',
+        'state',
+        'city',
+        'postal_code',
+      ],
+      limit: 20,
+      offset: (page - 1) * 20,
+    });
     return res.json(recipients);
   }
 
@@ -36,6 +50,10 @@ class RecipientController {
       return res.status(400).json({ error: 'Validations fails' });
 
     const recipient = await Recipient.findByPk(req.params.id);
+
+    if (!recipient)
+      return res.status(401).json({ error: 'Recipient Not Found!' });
+
     await recipient.update(req.body);
     return res.json(recipient);
   }
