@@ -8,7 +8,7 @@
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-API REST para controle de transportadoras em geral.
+API REST para controle de destinatários, envios de encomendas e entregadores voltado para transportadoras.
 
 ### Modulos disponíveis no momento:
 
