@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  FastFeet API (Back-end) - GoStack10 - Desafio 02
+  FastFeet API (Back-end) - GoStack10
 </h1>
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
