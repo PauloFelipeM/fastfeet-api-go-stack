@@ -36,6 +36,8 @@ git clone https://github.com/PauloFelipeM/fastfeet-api-go-stack.git
 
 cd /fastfeet-api-go-stack/ -> "npm install" or "yarn install"
 
+Criar um arquivo .env e realizar as configurações necessárias da aplicação de acordo com o arquivo .env_example
+
 -------------------------------------------------------------------------------------
 
 ## Usage
@@ -44,26 +46,13 @@ cd /fastfeet-api-go-stack/ -> "npm install" or "yarn install"
 
 Dentro da sua pasta rode o comando de sua preferência para instalar as dependencias: "yarn dev" or "npm run dev"
 
+Para modo de debug com VSCode: "yarn dev:debug"
+
 -------------------------------------------------------------------------------------
 
 ### Migração:
 
-No arquivo database.js dentro da pasta "src/config" é necessário realizar a configuração do banco de dados:
-```
-module.exports = {
-  dialect: 'postgres', // Qual o banco de dados ex: postgres, mysql
-  host: 'localhost', // Local onde o banco está configurado
-  username: 'usuario_do_banco',
-  password: 'senha_do_usuario',
-  database: 'nome_do_banco',
-  define: {
-    timestamps: true,
-    underscored: true,
-    underscoredAll: true,
-  },
-};
-```
-Após as configurações, executar o comando abaixo para criar as tabelas:
+Criar as tabelas:
 
 YARN: "yarn sequelize db:migrate" ou NPM: "npx sequelize-cli db:migrate"
 
@@ -80,6 +69,18 @@ Irá criar o usuário com as seguintes crendeciais:
 Email: admin@fastfeet.com
 
 Senha: 123456
+
+-------------------------------------------------------------------------------------
+
+### Envio de E-mails:
+
+Para realizar os envios de e-mails é necessário primeiramente configurar o banco de dados REDIS.
+
+Após a instalação, no arquivo .env informar o REDIS_HOST (ip de onde se encontra o banco de dados) REDIS_PORT (Porta do Redis, geralmente 6379)
+
+Para iniciar a fila de envio de e-mails é necessário rodar o comando: "yarn queue".
+
+Após isso o gerenciamento da fila de e-mails será ativado enviado os mesmos.
 
 -------------------------------------------------------------------------------------
 
